@@ -1,0 +1,35 @@
+
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.emotion_bg {
+
+
+  background-image: url("https://i.pinimg.com/1200x/26/e9/69/26e9691d75da9c966092f6c8019fb722.jpg");
+  background-size: cover;        /* image covers full screen */
+  background-position: center;   /* center the image */
+  background-repeat: no-repeat;
+
+}
+.home_bg {
+
+
+  background-image: url("https://chatgpt.com/backend-api/estuary/content?id=file_00000000fd487208890a3b6e3ee3f8c3&ts=492738&p=fs&cid=1&sig=e14041839a51554cbe53798c70be824c189f1c6779be9b52b15922b2fa363e93&v=0");
+  background-size: cover;        /* image covers full screen */
+  background-position: center;   /* center the image */
+  background-repeat: no-repeat;
+
+}
