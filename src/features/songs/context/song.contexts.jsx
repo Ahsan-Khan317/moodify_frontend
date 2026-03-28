@@ -25,12 +25,12 @@ const getmoodysong = (mood,songs)=>{
 if(mood == "neutral"){
     const result = songs
 setmoodysong(result)
-console.log(result)
+
 
 }else{
     const result = songs.filter((e)=> e.mood == mood)
 setmoodysong(result)
-console.log(result)
+
 }
 }
 

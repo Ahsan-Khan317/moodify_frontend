@@ -12,7 +12,7 @@ const Home = () => {
            get_allsong()
           
       },[])
-{console.log(song)}
+
   return (
     <div
       className="h-screen w-screen  relative overflow-hidden text-white"
