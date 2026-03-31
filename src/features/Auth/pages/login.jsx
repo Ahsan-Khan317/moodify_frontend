@@ -3,7 +3,7 @@ import home_bg from "../../../assets/home_bg.png";
 import { useNavigate } from "react-router-dom";
 import Inputs from "../components/input.jsx";
 import { useauth } from "../contexts/auth_context.jsx";
-
+import MessageCard from "../../shared/COMPONENTS/msgCard.jsx";
 const Login = () => {
   const { user_login } = useauth()
 
@@ -11,7 +11,7 @@ const Login = () => {
     email: "",
     password: "",
   });
-
+const [msg,setmsg] = useState("")
   const navigate = useNavigate()
 
   const handleChange = (e) => {
@@ -22,8 +22,9 @@ const Login = () => {
     e.preventDefault();
 
     const result = await user_login(form);
-
-    if (result) {
+ 
+setmsg(result)
+    if (result.success) {
       navigate("/");
     }
   };
@@ -37,6 +38,7 @@ const Login = () => {
         backgroundPosition: "center",
       }}
     >
+         {msg && <MessageCard msg={msg.message} success={msg.success} onClose={() => setmsg(null)} />}
       <div className="absolute inset-0 backdrop-blur-2xl bg-black/40"></div>
 
       <div className="relative z-10 w-full max-w-md backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 sm:p-8 shadow-2xl">
@@ -69,7 +71,9 @@ const Login = () => {
         </p>
 
       </div>
+    
     </div>
+   
   );
 };
 

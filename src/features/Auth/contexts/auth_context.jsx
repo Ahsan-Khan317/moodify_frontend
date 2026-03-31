@@ -32,7 +32,7 @@ const Authprovider = ({children})=>{
       return result;
     } catch (error) {
       console.log(error)
-      return null;
+      return error?.response?.data;
     } finally {
       setloading(false)
     }
@@ -46,8 +46,8 @@ const Authprovider = ({children})=>{
       setuser(result);
       return result;
     } catch (error) {
-      console.log(error)
-      return null;
+      
+      return error?.response?.data;
     } finally {
       setloading(false)
     }
