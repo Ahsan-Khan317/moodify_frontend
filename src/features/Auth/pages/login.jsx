@@ -37,8 +37,8 @@ setmsg(result)
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-    >
-         {msg && <MessageCard msg={msg.message} success={msg.success} onClose={() => setmsg(null)} />}
+    >{msg && <MessageCard msg={msg.message} success={msg.success} onClose={() => setmsg(null)} />}
+        
       <div className="absolute inset-0 backdrop-blur-2xl bg-black/40"></div>
 
       <div className="relative z-10 w-full max-w-md backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 sm:p-8 shadow-2xl">
@@ -46,7 +46,7 @@ setmsg(result)
         <h2 className="text-2xl font-bold text-center mb-6">
           Welcome Back 👋
         </h2>
-
+ 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
 
           <Inputs type="email" name="email" placeholder="Email" form_val={form.email} handleChange={handleChange} />
