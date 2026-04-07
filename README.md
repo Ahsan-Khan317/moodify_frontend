@@ -184,15 +184,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Tailwind CSS** for the beautiful styling utilities
 - **Vite** for the lightning-fast development experience
 
-## 📞 Support
 
-If you have any questions or need help:
-
-- 📧 **Email**: [your-email@example.com]
-- 🐛 **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/your-repo/discussions)
-
----
 
 <div align="center">
   <p>Made with ❤️ and lots of 🎵</p>
